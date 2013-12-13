@@ -1,4 +1,6 @@
 Sample::Application.routes.draw do
+  
+  devise_for :users
   resources :posts
 
   root :to => redirect('/posts')
